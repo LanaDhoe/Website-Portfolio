@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sacramento', sans-serif ;
+}
+
+body {
+    background: #FFECEF;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #FFCACA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    position: relative;
+    font-size: 40px;
+    color: #251B37;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150%;
+    height: 100%;
+    background: #FFCACA;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+.navbar a {
+    font-size: 20px;
+    font-family: 'Georgia';
+    text-decoration: none;
+    color:#251B37;
+    font-weight: 400;
+    margin-left: 60px;
+    transition: .3s;
+}
+
+.navbar a:hover, .navbar {
+    color: #FFECEF;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;   
+    padding: 0 10%;
+}
+
+.home_content {
+    border-radius: 23px;
+    background: linear-gradient(145deg, #e6b6b6, #ffd8d8);
+    box-shadow:  20px 20px 70px #d9acac, -20px -20px 70px #ffe8e8;
+    padding: 20PX;
+
+}
+
+.home_content h1 {
+    position: relative;
+    font-size: 56px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #251B37;
+    line-height: 1.2;
+}
+
+.home_content h2 {
+    position: relative;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #251B37;
+    line-height: 1.2;
+}
+
+
+.home_content p {
+    font-family: 'Georgia';
+    font-size: 17px;
+    color: #251B37;
+    margin: 20px 0 40px;
+}
+
+.home_content .btn-box {
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    width: 150px;
+    height: 50%;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight:400px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #FFECEF;
+    background: #251B37;
+    border-radius: 23px;
+    border: 2px solid #251B37;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #251B37;
+}
+
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #FFCACA;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #251B37;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #251B37;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+color: #FFECEF;
+}
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #251B37;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.image img {
+    width: px;
+    border-radius: 50%;
+    border-color: solid #666;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+
+    }
+}
+
+.about {
+    display: flex;
+    background-color: #FFECEF;
+    height: 100vh;
+    align-items: center;   
+    justify-content: space-between;
+    margin-top: 80px;
+    gap: 2rem;
+}
+
+.about-content {
+    padding: 30px;
+    flex: 1;
+
+}
+
+.about-content h1 {
+    display: inline-flex;
+    font-family: 'Poppins';
+    font-size: 40px;
+    color: #251B37;
+    position: relative;
+    text-align: justify;
+}
+
+.about-content p {
+    font-family: 'Georgia';
+    font-size: 18px;
+    color: #251B37;
+    margin: 20px 0 40px;
+    position: relative;
+    line-height: 1.2;
+    text-align: justify;
+
+}
+
+.image img {
+    width: 400px;
+    display: inline-flex;
+    position: relative;
+    padding: 30px;
+}
+
+.projects {
+    display: flex;
+    background-color: #FFECEF;
+    height: 100vh;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.projects-content {
+    border-radius: 23px;
+    background: linear-gradient(145deg, #e6b6b6, #ffd8d8);
+    box-shadow:  20px 20px 70px #d9acac, -20px -20px 70px #ffe8e8;
+    padding: 20PX;
+}
+.projects-content h1 {
+    display: inline-flex;
+    font-family: 'Poppins';
+    font-size: 50px;
+    color: #251B37;
+    line-height: 1.2;
+}
+
+.projects-content h3 {
+    font-family: 'Georgia';
+    font-size: 20px;
+    color: #251B37;
+    margin: 20px 0 40px;
+    position: relative;
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-section {
+    padding: 50px 20px;
+
+}
+
+.contact-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}   
+
+.contact-section h2 {
+    padding-top: 130px;
+    font-size: 30px;
+    font-family: 'Poppins';
+    margin-bottom: 2px;
+    color: #251B37;
+}
+
+.contact-section p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #251B37;
+    font-family: 'Poppins';
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    max-width: calc(50% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins';
+}
+
+.input-box textarea {
+    max-width: 100%;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #FFCACA;
+    color: #251B37;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #666;
+}
+
+@media (max-width: 768px) {
+    .input-box input,
+    .input-box textarea {
+    max-width: 100%;
+    }
+}
